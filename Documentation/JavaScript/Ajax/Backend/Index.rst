@@ -128,3 +128,6 @@ Here is the client-side part corresponding to the above example
 		parameters : '&shortcutId=' + shortcutId,
 		onComplete : this.reRenderMenu.bind(this)
 	});
+
+Note to this example: Ajax.Request is defined in the JavaScript "prototype" library, 
+which you need to make sure to include *if* you are using your own backend layouts... 
