@@ -54,6 +54,7 @@ submission.
    $tce = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\DataHandling\\DataHandler');
    $tce->stripslashes_values = 0;
    $tce->start($data, array());
+   //is this valid for 6.2?
    $tce->process_datamap();
 
 
@@ -74,6 +75,7 @@ commands.
    $tce = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\DataHandling\\DataHandler');
    $tce->stripslashes_values = 0;
    $tce->start(array(), $cmd);
+   //is this valid for 6.2?
    $tce->process_cmdmap();
 
 
